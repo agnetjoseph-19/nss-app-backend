@@ -6,7 +6,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb://annet-paul:annet123@ac-rrnjxoo-shard-00-00.bcqym4j.mongodb.net:27017,ac-rrnjxoo-shard-00-01.bcqym4j.mongodb.net:27017,ac-rrnjxoo-shard-00-02.bcqym4j.mongodb.net:27017/nssdb?ssl=true&replicaSet=atlas-stpu0i-shard-0&authSource=admin&appName=Cluster0").then(
+mongoose.connect("mongodb://agnet:agnet19@ac-noeplyt-shard-00-00.exoivte.mongodb.net:27017,ac-noeplyt-shard-00-01.exoivte.mongodb.net:27017,ac-noeplyt-shard-00-02.exoivte.mongodb.net:27017/nssdb?ssl=true&replicaSet=atlas-itatbn-shard-0&authSource=admin&appName=Cluster0").then(
     () => {
         console.log("mongodb connected")
     }
@@ -45,6 +45,6 @@ app.post("/add-vol",async (req,res) => {
     res.json({"status":"success"});
 });
 
-app.listen(3000, ()=> {
+app.listen(4000, ()=> {
     console.log("server started")
 });
